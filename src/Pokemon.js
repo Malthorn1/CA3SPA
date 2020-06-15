@@ -16,7 +16,7 @@ function Pokemon() {
   function getPokemon() {
     let pokemonID = document.getElementById("pokemonID").value; 
     let options = facade.makeOptions("GET", true)
-    fetch("http://localhost:8080/CA3/api/pokemon/"+ pokemonID, options)
+    fetch("https://coffeeaddict.dk/CA3/api/pokemon/"+ pokemonID, options)
       .then((res) => res.json())
       .then((data) => {
         if(data.code != "403") {

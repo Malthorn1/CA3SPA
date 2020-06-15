@@ -12,7 +12,7 @@ export default function UselessFact(){
     
     
      useEffect(()=>{
-        const fetchData = fetch("http://localhost:8080/CA3/api/uselessfact", options)
+        const fetchData = fetch("https://coffeeaddict.dk/CA3/api/uselessfact", options)
     .then((res) => res.json())
     .then((data) =>  setData(data))
     .catch((err) => console.log("fejl"))

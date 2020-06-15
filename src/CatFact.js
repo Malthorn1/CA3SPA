@@ -9,7 +9,7 @@ export default function CatFact() {
   const options  = facade.makeOptions("GET", true);
   const [data, setData] = useState([]);
   useEffect(() => {
-    const fetchData = fetch("http://localhost:8080/CA3/api/catfact",  options)
+    const fetchData = fetch("https://coffeeaddict.dk/CA3/api/catfact",  options)
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((err) => console.log("UPPS"));
